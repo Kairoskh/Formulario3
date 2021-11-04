@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario libre">
+    <meta name="author" content="Juan Félix">
+    <link rel="icon" href="logo.ico">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario libre</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+                <div id="marca">
+                    <h1><span class="resaltado">Tareas anteriores:</span> Formulario libre</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="https://kairoskh.github.io/ASIR2/">Índice</a></li>
+                        <li><a href="https://kairoskh.github.io/CV/">CV</a></li>
+                        <li><a href="https://kairoskh.github.io/Agenda/">Agenda</a></li>
+                        <li><a href="https://kairoskh.github.io/Formulario1/">Formulario 1</a></li>
+                        <li><a href="https://kairoskh.github.io/Formulario2/">Formulario 2</a></li>
+                        <li class="actual"><a href="index.html">Formulario libre</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    
+    <section id="cabecera">
+        <div class="contenedor">
+            <h2 class="cabe">Solicitud de préstamo bancario</h2>
+        </div>
+    </section>
+        <section id="boletin">
+            <div class="contenedor">
+                <h2>Rellena el siguiente formulario:</h2>
+                <form>
+                    <input type="email" name="email" placeholder="Ingresa tu email...">
+                    <button type="submit" class="boton1">Accede</button>
+                </form>
+            </div>
+        </section>
+            <div class="contenedor">
+                <article class="columna">
+                    <div class="formulario">
+                            
+                        <h3>Al hacer click <input type="button" class="boton2" value="aquí" onClick="window.location ='https://www.caixabank.es/index_es.html';"> te redirigirá a la página oficial de la Caixa.</h3>
+                        <h3>Al hacer click <input type="button" class="boton2" value="aquí" onClick="window.location ='https://www.bbva.es/personas.html';"> te redirigirá a la página oficial de BBVA.</h3>
+                        <h3>RELLENA LOS SIGUIENTES CAMPOS PARA SOLICITAR TU PRÉSTAMO BANCARIO:</h3>
+                        <br>
+                        <form method="get" action="Formulario.php">
+                                <fieldset>
+                                    <legend>Información del usuario</legend>
+                            <br>
+                                    <label for="nombre">Nombre:</label>
+                                        <input tabindex="1" class="input" type="text" id="nombre" placeholder="Ingresa tu nombre" maxlength="20" required pattern="[A-Za-z ]{1,20}" title="Ingresa tu nombre">
+                            <br>
+                                    <label for="apellidos">Apellidos:</label>
+                                        <input tabindex="2" class="input" type="text" id="apellidos" placeholder="Ingresa tus apellidos" maxlength="50" required pattern="[A-Za-z ]{1,50}" title="Ingresa tus apellidos">
+                            <br>
+                                    <label id="sex" tabindex="3">Sexo:</label>
+                                        <input type="radio" name="sexo" id="sexo-m" value="m" required/> 
+                                    <label for="sexo-m">Mujer</label>
+                                        <input type="radio" name="sexo" id="sexo-h" value="h" required/> 
+                                    <label for="sexo-h">Hombre</label>
+                                        <input type="radio" name="sexo" id="sexo-n" value="n" required/> 
+                                    <label for="sexo-n">No binario</label>
+                            <br><br>
+                                    <label for="DNI">DNI:</label>
+                                        <input tabindex="4" class="input" type="text" id="DNI" name="DNI" pattern="[0-9]{8}[A-Z]{1}" required placeholder="11.111.111-X" title="Ingresa tu DNI">
+                            <br>
+                                    <label for="direccion">Dirección:</label>
+                                        <input class="input" type="text" name="direccion" id="direccion" maxlength="70" title="Ingresa tu dirección">
+                            <br>
+                                    <label for="codigo">Código Postal:</label>
+                                        <input tabindex="5" class="input" type="text" name="codigo" id="codigo" placeholder="11111" maxlength="5" pattern="[0-9]{5}" required title="Ingresa tu código postal">
+                            <br>
+                                    <label for="poblacion">Población:</label>
+                                        <input class="input" type="text" name="poblacion" id="poblacion" maxlength="40" required title="Ingresa tu población">
+                            <br>
+                                    <label for="emailaddress">Correo: </label>      
+                                        <input tabindex="6" class="input" type="email" id="emailaddress" placeholder="Ingresa tu correo @..." title="Ingresa tu correo @..." required>
+                            <br>
+                                    <label for="renta">Declaración de la renta:</label>
+                                        <input  class="input" type="file" id="renta">
+                            <br>
+                                    <label for="telefono">Teléfono</label>
+                                        <input tabindex="7" class="input"  type="tel" id="telefono" placeholder="Ingresa tu Teléfono +34 6xx xxxx xx" pattern="[0-9]{1,15}" required title="Ingresa tu Teléfono">
+                            <br>
+                                    <label>Estado actual:</label>
+                            <br>
+                                    <select name="seleccion">
+                                        <option value="opcion1" >Soltero/a</option>
+                                        <option value="opcion2" >Casado/a</option>
+                                        <option value="opcion2" >En una relación</option>
+                                    </select>
+                            <br>
+                                    <label>Situación laboral:</label>
+                            <br>
+                                    <select name="lista de seleccion" size="4" required>
+                                        <option value="opcion1" >Trabajando.</option>
+                                        <option value="opcion2" >Estudiando.</option>
+                                        <option value="opcion3" >Estudia y trabaja.</option>
+                                        <option value="opcion4" >En el paro.</option>
+                                        <option value="opcion5" >Ninguna de als anteriores.</option>
+                                    </select>
+                            <br>
+                                    <label id="iban">Coloca tu Iban aquí:</label>
+                            <br>
+                                        <input tabindex="8" class="iban" type="text" name="cdp" placeholder="Código del País" title="Código del País" pattern="[A-Z]{2}" maxlength="2" required>
+                                        <input tabindex="9" class="iban" type="text" name="dc1" placeholder="Dígito de Control" title="Dígito de Control" pattern="[0-9]{2}" maxlength="2" required>
+                                        <input tabindex="10" class="iban" type="text" name="cb" placeholder="Código de Banco" title="Código de Banco" pattern="[0-9]{4}" maxlength="4" required>
+                                        <input tabindex="11" class="iban" type="text" name="sc" placeholder="Sucursal de la Cuenta" title="Sucursal de la Cuenta" pattern="[0-9]{4}" maxlength="4" required>
+                                        <input tabindex="12" class="iban" type="text" name="dc2" placeholder="Dígito de Control" title="Dígito de Control" pattern="[0-9]{2}" maxlength="2" required>
+                                        <input tabindex="13" class="iban" type="text" name="nc" placeholder="Número de cuenta" title="Número de cuenta" pattern="[0-9]{10}" maxlength="10" required>
+                            <br><br>
+                                    <label id="img">Ejemplo:</label>
+                                        <img src="images.jpg" alt="Ejemplo IBAN">
+                            <br> 
+                                    <label for="fecha">Fecha actual:</label>
+                                    <input class="input" type="date" name="fecha" id="fecha">
+                            </fieldset>
+
+                                <fieldset>
+                                    <legend>Acceso:</legend>
+
+                                    <label for="usuario">Usuario: </label>      
+                                        <input tabindex="14" class="input" type="text" id="usuario" placeholder="Ingresa tu usuario" maxlength="10" required pattern="[A-Za-z0-9]{1,10}" title="Ingresa tu usuario">                        
+                            <br>
+                                    <label for="clave">Contraseña:</label>
+                                        <input tabindex="15" class="input" type="password" id="clave" placeholder="Ingresa tu contraseña" maxlength="15" required pattern="[A-Za-z0-9]{1,15}" title="Ingresa tu contraseña">      
+                            <br>
+                                </fieldset>
+                             <fieldset>
+                                 <legend>Más datos:</legend>
+                                    <label for="comentario"> Porque solicita el préstamo:</label>
+                            <br>
+                                        <textarea name="texto" id="comentario" cols="50" rows="3">Cuentanos tu situación...</textarea>
+                            <br>
+                                    <label>¿Te ha resultado dificil rellenar los campos?</label>
+                            <br><br>
+                                    <select name="lista de seleccion" size="2">
+                                        <option value="opcion1" >Si</option>
+                                        <option value="opcion2" >No</option>
+                                        <option value="opcion3" >Omitir</option>
+                                    </select>
+                            <br><br>
+                                    <label tabindex="16">¿De cuanto es tu solicitud?</label>
+                            <br><br>
+                                            <input tabindex="17" type="radio" name="elije" value="poco" required>1000€-2000€
+                                        <br>
+                                            <input tabindex="18" type="radio" name="elije" value="mas" required>2000€-5000€
+                                        <br>
+                                            <input tabindex="19" type="radio" name="elije" value="mucho" required>5000€-...
+                                        <br>
+                            <br>
+                                    <label tabindex="20">¿Nos volverias a visitar?</label>
+                                        <p>
+                                            <input  type="radio" name="valor" value="SI" required> Si
+                                            <input  type="radio" name="valor" value="NO" required> No
+                                        </p>
+                            <br>
+                                    <label id="varios">Selecciona a que banco o bancos perteneces (puedes seleccionar más de uno):</label>
+                            <br><br>
+                                            <input type="checkbox">Caixa 
+                                        <br>
+                                            <input type="checkbox">BBVA
+                                        <br>
+                                            <input type="checkbox">Santander
+                            <br><br>
+                                        <input  class="input1" type="submit" value="Enviar datos">
+                            <br>
+                                        <fieldset>         
+                                                <legend>Botones de reset y envío:</legend>   
+                                                <button class="boton1" type="reset">Resetear</button>         
+                                                <button class="boton1" type="submit">Enviar</button>       
+                                        </fieldset>   
+                                        
+                                </fieldset>
+                            </form>
+                            <br>
+                            <h2><button type="button" onclick="alert('Muchas gracias por valorarnos, ¡¡¡esperamos verte pronto!!!')"> Haz clic aquí</button></h2>
+                            </div>
+                     </article>
+                
+                <aside class="lateral">
+                    <div class="oscuro">
+                        <h3>Rellena este formulario para que contactemos contigo.</h3>
+                        <p>Esperamos verte pronto.</p>
+                    </div>
+                </aside>     
+            </div>
+    <footer>
+        <p>Formulario libre, Copyright &copy; 2021. Tarea 3(4) ASIR 2º Juan Félix.</p>
+    </footer>
+    </body>
+    </html>
